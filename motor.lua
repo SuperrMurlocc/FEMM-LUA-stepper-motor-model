@@ -292,7 +292,7 @@ mi_clearselected()
 
 mi_zoomnatural()
 
-save = 1 -- set to 1 to save to \location\ and see results
+save = 0 -- set to 1 to save to \location\ and see results
 if save == 1 then
 	mi_saveas("location\\name.FEM")
 	mi_createmesh()
@@ -303,7 +303,7 @@ if save == 1 then
 	mo_showdensityplot(1, 0, 21364260.460379, 0, "bmag")
 end
 
-save_to_movie = 1 -- set to 1 to save \frames\ pngs to \location\, these can be later used to create animation
+save_to_movie = 0 -- set to 1 to save \frames\ pngs to \location\, these can be later used to create animation
 if save_to_movie == 1 then
 
     frames = 60
